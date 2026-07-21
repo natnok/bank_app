@@ -1,2 +1,45 @@
-.venv
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Виртуальное окружение
+venv/
+.venv/
+env/
+ENV/
+
+# Переменные окружения / секреты
 .env
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+
+# Логи
+*.log
+
+# Кэши / тестирование
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Сборки / дистрибутивы
+build/
+dist/
+*.egg-info/
+
+# Alembic (если используете миграции)
+# alembic/versions/*.pyc  — обычно версии миграций коммитят, кэш не нужен
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker (если есть локальные volume-данные)
+# postgres_data/
