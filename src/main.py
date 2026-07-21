@@ -1,15 +1,17 @@
 from fastapi import FastAPI
 import uvicorn
 from src.config import settings
+from src.api import api_router
 
 app = FastAPI(
     title=settings.app_title,
     version=settings.app_version,
 )
+app.include_router(api_router)
 
 
 def main():
-    print("Hello from bank-app!")
+    pass
 
 
 if __name__ == "__main__":
